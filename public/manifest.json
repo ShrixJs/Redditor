@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Sidebar",
+  "version": "1.0",
+  "description": "Quickly access your favorite subreddit posts from a sidebar",
+  "permissions": ["storage", "sidePanel"],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "extension/service-worker.js"
+  }
+}
